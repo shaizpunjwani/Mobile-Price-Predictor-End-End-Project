@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Price Predictor</title>
+
+
+    <style>
+
+        .container{
+            text-align: center;
+
+
+            background-color: rgb(212, 164, 100);
+            border: 5px solid rgb(134, 29, 29);
+
+            padding: 0px 0px 100px 0px;
+            margin: -8px -8px -8px -8px;
+            /* width: 230px; */
+        }
+
+            p{
+            font-family: 'Oswald', 'sans-serif', 'Arial Narrow', 'Arial', 'sans-serif';
+            font-size: 50px;
+            line-height: 1.5em;
+
+        }
+    
+    
+    
+    
+    
+    
+    
+    </style>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <div class="container">
+
+        <h1><strong>Mobile Price Predictor</strong></h1>
+
+        <!-- action is used ka hamara page kahn land kare -->
+        <form action="{{ url_for('predict')}}" method="POST">
+            <h3>Enter the feature 1</h2><br>
+            <input type="number" name="feat1" placeholder="feat1"><br>
+            <h3>Enter the feature 2</h3><br>
+            <input type="number" name="feat2" placeholder="feat2"><br>
+            <h3>Enter the feature 3</h3><br>
+            <input type="number" name="feat3" placeholder="feat3"><br>
+            <h3>Enter the feature 4</h3><br>
+            <input type="number" name="feat4" placeholder="feat4"><br>
+            <h3>Enter the feature 5</h3><br>
+            <input type="number" name="feat5" placeholder="feat5"><br>
+            <h3>Enter the feature 6</h3><br>
+            <input type="number" name="feat6" placeholder="feat6"><br><br>
+        <button type="submit">submit</button> <br><br>
+    </form>
+
+    <strong><p>{{names}}</p></strong>
+
+    </div>
+    
+</body>
+</html>
